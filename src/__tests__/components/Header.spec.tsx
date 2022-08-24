@@ -1,6 +1,7 @@
+/* eslint-disable import/no-unresolved */
 import { render, screen, fireEvent } from '@testing-library/react';
-// eslint-disable-next-line import/no-unresolved
-import { RouterContext } from 'next/dist/shared/lib/router-context';
+import { RouterContext } from 'next/dist/next-server/lib/router-context';
+
 import Header from '../../components/Header';
 
 const mockedPush = jest.fn();
